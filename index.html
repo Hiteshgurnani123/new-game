@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamnna Ki IAS Journey</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🎓 Tamnna Ki IAS Journey 🎓</h1>
+            <p>Help Tamnna reach square 100 and become an IAS officer!</p>
+        </header>
+
+        <div class="game-area">
+            <div class="game-board" id="gameBoard"></div>
+            
+            <div class="game-controls">
+                <div class="player-info">
+                    <div class="player-avatar">👩‍💼</div>
+                    <h3>Tamnna</h3>
+                    <p>Current Position: <span id="currentPosition">0</span></p>
+                </div>
+                
+                <div class="dice-section">
+                    <div class="dice" id="dice">🎲</div>
+                    <button id="rollDice" class="roll-btn">Roll Dice</button>
+                    <p>Last Roll: <span id="lastRoll">-</span></p>
+                </div>
+
+                <div class="phase-indicator">
+                    <h4>Current Journey Phase:</h4>
+                    <div class="current-phase" id="currentPhase">📚 Study Phase</div>
+                    <div class="phase-progress" id="phaseProgress"></div>
+                </div>
+
+                <div class="legend">
+                    <h4>Legend:</h4>
+                    <div class="legend-item">🪜 Milestones (Ladders)</div>
+                    <div class="legend-item">⚠️ Challenges (Snakes)</div>
+                    <div class="legend-item">📚 Study → 📝 Prelims → ✍️ Mains → 🗣️ Interview → 🏆 Final</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="win-modal" id="winModal">
+            <div class="win-content">
+                <div class="winner-avatar">👩‍💼</div>
+                <div class="winner-title">IAS Tamnna Jangid</div>
+                <h2>🎉 Congratulations! 🎉</h2>
+                <p>"Khud par vishwas rakho, IAS banna mumkin hai – Tamnna ne kar dikhaya!"</p>
+                <button onclick="restartGame()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
